@@ -2,47 +2,59 @@ package ct.product_exp
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.clevertap.android.sdk.CleverTapAPI
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import ct.product_exp.prd.ProdExpVariables
 import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
-
+    private var home = HashMap<String, Any>()
+    private var product = HashMap<String, Any>()
     private lateinit var recyclerView: RecyclerView
     private lateinit var productAdapter: ProductAdapter
     private var isGridView = false
     private lateinit var btnToggle: Button
+    private var clevertapDefaultInstance: CleverTapAPI? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        clevertapDefaultInstance = CleverTapAPI.getDefaultInstance(
+            this
+        )
+        var productVariables = ProdExpVariables(clevertapDefaultInstance)
 
         recyclerView = findViewById(R.id.recyclerView)
         btnToggle = findViewById(R.id.btnToggle)
+        home = clevertapDefaultInstance?.getVariableValue("ProdExp") as HashMap<String, Any>;
+        product = home["product"] as HashMap<String, Any>
+
 
 
         val productList = getProductList()
 
-        productAdapter = productList?.let { ProductAdapter(it, this, false) }!!
+        productAdapter = productList?.let { ProductAdapter(product,it, this, false) }!!
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = productAdapter
+        btnToggle.visibility= View.GONE
+        isGridView = home["list_view"] as Boolean
+        Toast.makeText(applicationContext,isGridView.toString(),Toast.LENGTH_SHORT).show()
 
-        btnToggle.setOnClickListener {
-            isGridView = !isGridView
             if (isGridView) {
                 recyclerView.layoutManager = GridLayoutManager(this, 2)
-                btnToggle.text = "Switch to List View"
             } else {
                 recyclerView.layoutManager = LinearLayoutManager(this)
-                btnToggle.text = "Switch to Grid View"
             }
             productAdapter.setGridView(isGridView)
-        }
     }
 
     private fun getProductList(): List<Product>? {

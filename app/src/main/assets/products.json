@@ -1,114 +1,114 @@
 [
     {
-        "title": "Apple iPhone 14",
+        "title": "Apple iPhone 15",
         "description": "6.1-inch display, A15 Bionic chip, dual-camera system",
         "price": "$799",
         "discount": "5%",
-        "imageResource": "https://images.unsplash.com/photo-1634161155964-16e1aa2f44c2"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "Samsung Galaxy S22",
         "description": "6.2-inch AMOLED display, 128GB storage, triple-camera",
         "price": "$849",
         "discount": "10%",
-        "imageResource": "https://images.unsplash.com/photo-1641788900772-bbe5ff4ac060"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/bgmi.jpeg"
     },
     {
         "title": "Sony WH-1000XM5 Headphones",
         "description": "Noise-canceling, wireless, up to 30 hours of battery life",
         "price": "$349",
         "discount": "15%",
-        "imageResource": "https://images.unsplash.com/photo-1617691269545-91f9ddc1c3c0"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/steam.jpeg"
     },
     {
         "title": "Dell XPS 13 Laptop",
         "description": "13.4-inch FHD display, Intel Core i7, 16GB RAM, 512GB SSD",
         "price": "$1,199",
         "discount": "7%",
-        "imageResource": "https://images.unsplash.com/photo-1604333839303-59d065c3c2f2"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/bgmi.jpeg"
     },
     {
         "title": "Nike Air Max 270",
         "description": "Breathable mesh upper, durable rubber outsole, max air cushioning",
         "price": "$150",
         "discount": "20%",
-        "imageResource": "https://images.unsplash.com/photo-1616582861278-86a6cf36a18e"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "LG OLED55CXPUA 55\" TV",
         "description": "55-inch 4K OLED display, Dolby Vision, 120Hz refresh rate",
         "price": "$1,499",
         "discount": "12%",
-        "imageResource": "https://images.unsplash.com/photo-1610538079537-244c4e807066"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/steam.jpeg"
     },
     {
         "title": "Apple MacBook Air M2",
         "description": "13.6-inch Retina display, M2 chip, 8GB RAM, 256GB SSD",
         "price": "$999",
         "discount": "5%",
-        "imageResource": "https://images.unsplash.com/photo-1623893100935-810e2f01259d"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/bgmi.jpeg"
     },
     {
         "title": "Bose QuietComfort 45",
         "description": "Noise-canceling, wireless, 24 hours battery, comfortable fit",
         "price": "$329",
         "discount": "10%",
-        "imageResource": "https://images.unsplash.com/photo-1613405088031-b91b10d82f36"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "GoPro HERO11 Black",
         "description": "5.3K video, 27MP photos, waterproof, hyper smooth stabilization",
         "price": "$399",
         "discount": "8%",
-        "imageResource": "https://images.unsplash.com/photo-1629076345738-b0c9e370d927"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/steam.jpeg"
     },
     {
         "title": "Amazon Echo Dot (5th Gen)",
         "description": "Smart speaker with Alexa, compact design, improved sound quality",
         "price": "$49.99",
         "discount": "15%",
-        "imageResource": "https://images.unsplash.com/photo-1570054725493-8d34c5dc4e67"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "Kindle Paperwhite",
         "description": "6.8-inch display, waterproof, 8GB storage, adjustable warm light",
         "price": "$139.99",
         "discount": "10%",
-        "imageResource": "https://images.unsplash.com/photo-1607602372632-ea0ab5d8ec62"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/bgmi.jpeg"
     },
     {
         "title": "Red Backpack",
         "description": "Bright red backpack with multiple compartments",
         "price": "$45",
         "discount": "10%",
-        "imageResource": "https://images.unsplash.com/photo-1556272750-ef734a8b5b36"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/steam.jpeg"
     },
     {
         "title": "Blue Sneakers",
         "description": "Stylish blue sneakers, comfortable and durable",
         "price": "$75",
         "discount": "5%",
-        "imageResource": "https://images.unsplash.com/photo-1594821039448-e58f39a2cf08"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "Green Desk Lamp",
         "description": "Adjustable green desk lamp with LED light",
         "price": "$30",
         "discount": "12%",
-        "imageResource": "https://images.unsplash.com/photo-1593885269030-d6e14f5196dd"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/bgmi.jpeg"
     },
     {
         "title": "Yellow Chair",
         "description": "Comfortable yellow chair for home or office",
         "price": "$120",
         "discount": "8%",
-        "imageResource": "https://images.unsplash.com/photo-1552514388-34908ff627f1"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/pro.jpeg"
     },
     {
         "title": "Purple Notebook",
         "description": "Purple hardcover notebook, 200 pages",
         "price": "$12",
         "discount": "15%",
-        "imageResource": "https://images.unsplash.com/photo-1594849015370-061663c3c405"
+        "imageResource": "https://static-website-tej886.s3.ap-south-1.amazonaws.com/images/steam.jpeg"
     }
 ]

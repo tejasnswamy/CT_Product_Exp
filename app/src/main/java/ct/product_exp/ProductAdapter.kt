@@ -8,8 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import ct.product_exp.prd.ProdExpVariables
 
 class ProductAdapter(
+    private var product: HashMap<String, Any> = HashMap<String, Any>(),
     private val productList: List<Product>,
     private val context: Context,
     private var isGridView: Boolean
@@ -24,13 +26,26 @@ class ProductAdapter(
         val view = if (isGridView) {
             LayoutInflater.from(context).inflate(R.layout.item_grid_view, parent, false)
         } else {
-            LayoutInflater.from(context).inflate(R.layout.item_grid_view, parent, false)
+            LayoutInflater.from(context).inflate(R.layout.item_list_view, parent, false)
         }
         return ProductViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ProductViewHolder, position: Int) {
+
+        var product_image_show = product["product_image_show"] as Boolean
+        var product_name_show = product["product_name_show"] as Boolean
+        var offer_show = product["offer_show"] as Boolean
+        var disc_show = product["disc_show"] as Boolean
+        var category = product["category"] as String
+
         val product = productList[position]
+        if(!product_image_show) holder.productImage.visibility = View.GONE
+        if(!product_name_show) holder.productTitle.visibility = View.GONE
+        if(!offer_show) holder.productDiscount.visibility = View.GONE
+        if(!disc_show) holder.productDescription.visibility = View.GONE
+
+
         holder.productTitle.text = product.title
         holder.productDescription.text = product.description
         holder.productPrice.text = product.price

@@ -53,6 +53,8 @@ dependencies {
     implementation(libs.androidx.recyclerview)
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation ("androidx.cardview:cardview:1.0.0")
+    implementation ("com.clevertap.android:clevertap-android-sdk:7.0.1")
+    implementation ("com.google.firebase:firebase-messaging:23.0.6")
     //kapt(libs.glide.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
